@@ -1,0 +1,127 @@
+<!-- layout/main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="#72bcd1"
+    >
+
+	<TextView
+		android:layout_width="367dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_toRightOf="@+id/icon"
+		android:gravity="center_horizontal"
+		android:paddingBottom="16dip"
+		android:text="Currency Conversion Exchange"
+		android:textSize="30dp"
+		android:textColor="#000000"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="3dp">
+
+		<TextView
+			android:id="@+id/amount"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Dollar Amount ($) : "
+			android:textColor="#000"
+			android:textSize="18dp"
+			android:layout_marginLeft="30dp"
+			android:layout_marginTop="40dp"/>
+
+		<TextView
+			android:id="@+id/amount_to_convert"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=""
+			android:layout_toRightOf="@+id/amount"
+			android:textColor="#000"
+			android:textSize="18dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginTop="40dp"/>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="3dp">
+	<TextView
+		android:id="@+id/type"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Convert To : "
+		android:textColor="#000"
+		android:textSize="18dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="10dp"/>
+	<TextView
+		android:id="@+id/type_to_convert"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:layout_toRightOf="@+id/type"
+		android:textColor="#000"
+		android:textSize="18dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"/>
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="361dp"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="45dp"
+		android:layout_marginRight="30dp"
+		android:layout_marginTop="90dp"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/convert_btn"
+			android:layout_width="150dp"
+			android:layout_height="50dp"
+			android:layout_marginBottom="10dp"
+			android:background="#296E01"
+			android:onClick="convert"
+			android:text="Apply"
+			android:textColor="#fff" />
+		<Button
+			android:id="@+id/close_btn"
+			android:layout_width="150dp"
+			android:layout_height="50dp"
+			android:layout_centerInParent="true"
+			android:layout_marginBottom="10dp"
+			android:layout_marginLeft="10dp"
+			android:background="#ff6347"
+			android:layout_toRightOf="@+id/convert_btn"
+			android:onClick="close"
+			android:text="close"
+			android:textColor="#000000" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:layout_marginTop="30dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/in_progess"
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:text=""
+			android:textColor="#000"
+			android:textSize="15dp" />
+	</RelativeLayout>
+
+
+</LinearLayout>

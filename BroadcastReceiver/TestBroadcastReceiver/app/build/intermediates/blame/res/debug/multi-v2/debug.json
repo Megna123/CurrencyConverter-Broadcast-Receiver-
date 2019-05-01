@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Shish\\Downloads\\TestBroadcastReceiver\\TestBroadcastReceiver\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shish\\Downloads\\TestBroadcastReceiver\\TestBroadcastReceiver\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "12,9,10,2",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "471,368,416,55",
+                        "endLines": "16,9,10,8",
+                        "endColumns": "19,47,53,13",
+                        "endOffsets": "624,411,465,363"
+                    },
+                    "to": {
+                        "startLines": "2,7,8,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,213,261,315",
+                        "endLines": "6,7,8,15",
+                        "endColumns": "19,47,53,13",
+                        "endOffsets": "208,256,310,623"
+                    }
+                }
+            ]
+        }
+    ]
+}
